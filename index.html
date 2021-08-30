@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="block1">
+        <form name="infoForm">
+            <label for="balance">Balance
+                <input disabled id="balance" type="text">
+            </label>
+            <label for="beer">Beer
+                <input disabled id="beer" type="text">
+            </label>
+            <label for="wine">Wine
+                <input disabled id="wine" type="text">
+            </label>
+            <label for="pepsi">Pepsi
+                <input disabled id="pepsi" type="text">
+            </label>
+        </form>
+    </div>
+    <div class="block2">
+        <form name="count">
+            <label for="count">Count
+                <input id="count" type="number">
+            </label>
+            <div> <input checked value="beer" name="products" type="radio">Beer
+                <input value="wine" name="products" type="radio">Wine
+                <input value="pepsi" name="products" type="radio">Pepsi
+            </div>
+            <input id="add" type="button" value="Add">
+            <textarea disabled id="basket" name="basket"></textarea>
+            <input id="buy" type="button" value="Buy">
+        </form>
+    </div>
+    <div class="block3">
+    </div>
+    <div class="messageBlock">
+        <div class="closeMessage"><img class="colseSvg" style="width: 20px;height: 20px;" src="./icons/close.svg"></div>
+        <div class="infoMessage"><p class="message"></p></div>
+        <div class="closeMessage2">
+            <input id="close" type="button" value="close">
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>

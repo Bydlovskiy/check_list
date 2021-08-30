@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    .block1,
+    .block2,
+    .block3 {
+        margin: 100px 20px 0;
+        width: 300px;
+        height: 400px;
+        border: 1px solid black;
+        border-radius: 7px;
+
+        form {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            label {
+                font-size: 20px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            input[type=text] {
+                margin: 10px 0;
+                height: 30px;
+            }
+
+            input[type=number] {
+                height: 30px;
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            textarea {
+                width: 80%;
+                height: 150px;
+                resize: none;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            input[type=button] {
+                margin: 10px 0;
+                width: 80%;
+                height: 30px;
+            }
+        }
+    }
+    .block3 {
+        padding: 50px;
+        font-size: 20px;
+    }
+}
+
+.messageBlock {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: white;
+    display: none;
+
+    .closeMessage,
+    .infoMessage,
+    .closeMessage2 {
+        height: 33%;
+        border-top: 1px solid gray;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+
+        .message {
+            font-size: 20px;
+        }
+    }
+
+    .closeMessage,
+    .closeMessage2 {
+        justify-content: flex-end;
+    }
+}
