@@ -31,10 +31,15 @@ function alkoShop() {
         return storage.pepsi
     }
 
+    class Order {
+        constructor(count,drink){
+            this.count = count;
+            this.drink = drink
+        }
+    }
+
     function toBasket(count, drink) {
-        let order = {};
-        order.count = count;
-        order.drink = drink;
+        let order = new Order(count,drink);
         let check;
         if (storage[drink] >= order.count) {
             if (basket.length == 0 && count != '') {
